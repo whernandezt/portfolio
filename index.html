@@ -27,19 +27,19 @@
             <br />
             I'm a frontend developer.
           </p>
-          <a href="#portfolio"
-            >My projects
+          <a href="#about"
+            >More about me
             <span class="button__arrow"
               ><i class="fa-solid fa-arrow-right"></i></span
           ></a>
         </div>
       </section>
-      <nav class="nav-bar">
+      <nav id="navbar" class="navbar">
         <button class="button button--menu">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <ul class="nav-bar__menu">
-          <li><a href="#home">Home</a></li>
+        <ul class="navbar__menu">
+          <li class="active"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -48,33 +48,61 @@
     </header>
     <main>
       <section id="about" class="about">
-        <h2 class="section__title">About me</h2>
-        <figure class="about__photo">
-          <img
-            src="https://lh3.googleusercontent.com/a-/AOh14GgDPKqC5oUMblcVYtRefQP4XLvm5tql-FL3VYBbHw=s360-p-rw-no"
-            alt="Photo"
-          />
-        </figure>
-        <p class="about__description">
-          I'm an appossionate frontend developer from El Salvador. <br />
-          I love creating intuitive and dynamic user experiences.
-        </p>
-        <div class="about__tecnology">
-          <span class="about__tecnology--html"
+        <h2 class="section__title">About</h2>
+        <div class="about-info">
+          <figure class="about-info__photo">
+            <img
+              src="https://lh3.googleusercontent.com/a-/AOh14GgDPKqC5oUMblcVYtRefQP4XLvm5tql-FL3VYBbHw=s360-p-rw-no"
+              alt="Photo"
+            />
+          </figure>
+          <h3 class="about-info__title">Who am I?</h3>
+          <p class="about-info__description">
+            I'm a very passionate frontend developer from El Salvador. <br />
+            I love creating intuitive and dynamic user experiences.
+          </p>
+          <a class="link" href="#contact">Let's make something great!</a>
+        </div>
+        <div class="about-tecnology">
+          <span class="about-tecnology__span about-tecnology__span--html"
             ><i class="fa-brands fa-html5"></i
           ></span>
-          <span class="about__tecnology--css"
+          <div class="progress-bar progress-bar--html">
+            <span
+              data-progress="75"
+              class="progress-bar__info progress-bar__info--html"
+              >75%</span
+            >
+          </div>
+
+          <span class="about-tecnology__span about-tecnology__span--css"
             ><i class="fa-brands fa-css3-alt"></i
           ></span>
-          <span class="about__tecnology--js"
+          <div class="progress-bar progress-bar--css">
+            <span
+              data-progress="75"
+              class="progress-bar__info progress-bar__info--css"
+              >75%</span
+            >
+          </div>
+
+          <span class="about-tecnology__span about-tecnology__span--js"
             ><i class="fa-brands fa-js-square"></i
           ></span>
+          <div class="progress-bar progress-bar--js">
+            <span
+              data-progress="40"
+              class="progress-bar__info progress-bar__info--js"
+              >40%</span
+            >
+          </div>
         </div>
-        <a class="link" href="#contact">Let's make something great!</a>
       </section>
       <section></section>
       <section></section>
     </main>
     <footer></footer>
+
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
