@@ -122,7 +122,7 @@ html{
 }
 
 .about {
-    padding-top: 50px;
+    padding-top: 90px;
     width: 100%;
     height: auto;
     text-align: center;
@@ -173,7 +173,7 @@ html{
 .about-tecnology__span {
     display: inline-block;
     font-size: 3.6rem;
-    padding: 0 30px;
+    padding: 0 10px;
 }
 
 .about-tecnology__span--html {
@@ -190,8 +190,7 @@ html{
 
 .progress-bar {
     margin: 0 auto;
-    width: 80%;
-    max-width: 500px;
+    width: calc(100% - 20px);
     min-width: 180px;
     height: 30px;
     border-radius: 5px;
